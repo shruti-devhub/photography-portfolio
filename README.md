@@ -1,4 +1,4 @@
-Photography Portfolio
+Anshi photography
 
 A responsive photography portfolio website showcasing nature, flower, and floral photography.
 Built with HTML & CSS.
@@ -10,7 +10,7 @@ Built with HTML & CSS.
 - Nature & Flower photography collection
 
 Live Demo
-https://shruti-devhub.github.io/Anshi-photography/
+https://shruti-devhub.github.io/anshi-photography/
 
 Tech Stack
 - *HTML5*
