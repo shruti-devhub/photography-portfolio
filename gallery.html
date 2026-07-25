@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Anshi Photography | Flower Photos</title>
+  <meta name="description" content="Beautiful flower photography gallery - Roses, sunflowers, lotuses and more captured in nature's light.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Floating Leaves Background -->
+  <div class="floating-leaves">
+    <div class="leaf"></div><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div>
+    <div class="leaf"></div><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h2>🌸 <span class="highlight">Phool</span> Photography</h2>
+    <button class="menu-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="about.html">📖 About</a>
+      <a href="gallery.html" class="active">🖼️ Gallery</a>
+      <a href="services.html">📸 Services</a>
+      <a href="contact.html">📞 Contact</a>
+        <a href="index.html" class="logo"> ANSHI SINGH PHOTOGRAPHY</a>
+    </nav>
+  </header>
+
+  <!-- Gallery Hero -->
+  <section class="gallery-hero">
+    <div>
+      <h1 class="reveal">🖼️ My Gallery</h1>
+      <p class="reveal">Capturing the beauty of Nature through my lens - take a look  </p>
+    </div>
+  </section>
+
+  <!-- Gallery Filters -->
+  <section style="padding-top: 60px;">
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">🌺 All</button>
+      <button class="filter-btn" data-filter="roses">🌹 Roses</button>
+      <button class="filter-btn" data-filter="sunflowers">🌻 Sunflowers</button>
+      <button class="filter-btn" data-filter="lotus">🪷 Lotus</button>
+      <button class="filter-btn" data-filter="wildflowers">🏵️ Wildflowers</button>
+      <button class="filter-btn" data-filter="macro">🔬 Macro</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+      <!-- Roses -->
+      <div class="gallery-item" data-category="roses">
+        <img src="images/phool1.jpeg" alt="Red Rose closeup" loading="lazy">
+        <div class="overlay">🌹 Red Rose</div>
+      </div>
+      <div class="gallery-item" data-category="roses">
+        <img src="images/phool2.jpeg" alt="Pink Rose" loading="lazy">
+        <div class="overlay">🌷 Pink Rose</div>
+      </div>
+      <div class="gallery-item" data-category="roses">
+        <img src="images/phool3.jpeg" alt="Yellow Rose" loading="lazy">
+        <div class="overlay">🌼 Yellow Rose</div>
+      </div>
+
+      <!-- Sunflowers -->
+      <div class="gallery-item" data-category="sunflowers">
+        <img src="images/ph8.jpeg" alt="Sunflower field" loading="lazy">
+        <div class="overlay">🌻 Sunflower Field</div>
+      </div>
+      <div class="gallery-item" data-category="sunflowers">
+        <img src="images/phool5.jpeg" alt="Single Sunflower" loading="lazy">
+        <div class="overlay">🌻 Ek Sunflower</div>
+      </div>
+      <div class="gallery-item" data-category="sunflowers">crop
+        <img src="images/phool6.jpeg" alt="Sunflower closeup" loading="lazy">
+        <div class="overlay">🌻 Sunflower Macro</div>
+      </div>
+
+      <!-- Lotus -->
+      <div class="gallery-item" data-category="lotus">
+        <img src="images/ph6.jpeg" loading="lazy">
+        <div class="overlay">🪷 Pink Lotus</div>
+      </div>
+      <div class="gallery-item" data-category="lotus">
+        <img src="images/ph5.jpeg" alt="White Lotus" loading="lazy">
+        <div class="overlay">🪷 White Lotus</div>
+      </div>
+      <div class="gallery-item" data-category="lotus">
+        <img src="images/ph4.jpeg" alt="Lotus pond" loading="lazy">
+        <div class="overlay">🪷 Lotus Pond</div>
+      </div>
+
+      <!-- Wildflowers -->
+      <div class="gallery-item" data-category="wildflowers">
+        <img src="images/ph3.jpeg" alt="Wildflower meadow" loading="lazy">
+        <div class="overlay">🏵️ Wildflower Meadow</div>
+      </div>
+      <div class="gallery-item" data-category="wildflowers">
+        <img src="images/ph2.jpeg" alt="Purple wildflowers" loading="lazy">
+        <div class="overlay">🪻 Purple Blooms</div>
+      </div>
+      <div class="gallery-item" data-category="wildflowers">
+        <img src="images/ph1.jpeg" alt="Daisy flowers" loading="lazy">
+        <div class="overlay">🌼 Daisies</div>
+      </div>
+
+      <!-- Macro -->
+      <div class="gallery-item" data-category="macro">
+        <img src="images/WhatsApp Image 2026-07-25 at 7.45.21 PM.jpeg" alt="Macro flower shot" loading="lazy">
+        <div class="overlay">🔬 Macro Details</div>
+      </div>
+      <div class="gallery-item" data-category="macro">
+        <img src="images/WhatsApp Image 2026-07-25 at 7.45.22 PM.jpeg" alt="Pollen macro" loading="lazy">
+        <div class="overlay">🔬 Pollen Closeup</div>
+      </div>
+      <div class="gallery-item" data-category="macro">
+        <img src="images/WhatsApp Image 2026-07-25 at 7.45.23 PM.jpeg" alt="Water drops on flower" loading="lazy">
+        <div class="overlay">💧 Water Drops</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="Enlarged flower photo">
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/6388880604?text=Hi!%20Mujhe%20aapki%20gallery%20bahut%20pasand%20ayi%20🌸" 
+     class="whatsapp-btn" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    💬
+    <span class="tooltip">WhatsApp!</span>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram">📷</a>
+      <a href="#" aria-label="Facebook">👍</a>
+      <a href="https://wa.me/6388880604" aria-label="WhatsApp">💬</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+    </div>
+    <p>© 2026 <span class="heart">🌸</span> Anshi Photography | Made with <span class="heart">❤️</span>ANSHI SINGH PHOTOGRAPHY in Lucknow</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
