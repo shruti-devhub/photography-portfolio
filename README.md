@@ -10,7 +10,7 @@ Built with HTML & CSS.
 - Nature & Flower photography collection
 
 Live Demo
-https://shruti-devhub.github.io/photography-portfolio/
+https://shruti-devhub.github.io/Anshi-photography/
 
 Tech Stack
 - *HTML5*
